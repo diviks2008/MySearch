@@ -18,7 +18,7 @@ h_st = 48
 register = 0
 start_switch = '#'
 file_exclude = 'mysearch.exclude'
-
+myemail = '646976696b733230303840676d61696c2e636f6d'
 version = 3
 
 
@@ -658,14 +658,6 @@ class MySearch():
         text_window.config(yscrollcommand=scrollbar1.set)
         scrollbar1.config(command=text_window.yview)
         self.help.bind('<Escape>', self.menu_close)
-
-
-def PrintMyName():
-    myname = '446d69747269657620566173696c79205061766c6f76696368'
-    myemail = '646976696b733230303840676d61696c2e636f6d'
-    print('My details:')
-    print(bytes.fromhex(myname).decode())
-    print(bytes.fromhex(myemail).decode())
 
 
 def get_end_time_program():
